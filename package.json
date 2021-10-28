@@ -1,0 +1,21 @@
+{
+    "name": "2021-ts-bundling-example",
+    "version": "1.0.0",
+    "description": "typescript bundling example",
+    "scripts": {
+        "BUILD": "npm run compile && npm run bundle",
+        "DIST": "npm run compile && npm run bundle && npm run copy-html",
+        "SERVE": "live-server --open=dist",
+        "compile": "tsc",
+        "watch": "tsc --watch",
+        "copy-html": "copy src\\*.html dist",
+        "bundle": "rollup -c"
+    },
+    "keywords": [
+        "learning",
+        "typescript",
+        "bundle"
+    ],
+    "author": "jdelarubia",
+    "license": "ISC"
+}
